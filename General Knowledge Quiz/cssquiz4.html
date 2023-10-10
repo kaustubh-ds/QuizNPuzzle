@@ -1,0 +1,99 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <style>
+       body{
+             background-image:url("quizzz.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+
+           }
+    	 #tit{
+             
+             text-align:center;
+             font-family: 'Bauhaus 93 Regular';
+             letter-spacing: 1px;
+             font-weight:bold;
+           }
+           }
+       #que{
+             text-align:center;
+             font-weight:bold;
+             font-family: 'Century Gothic';
+           }
+       #ans{
+              text-align:center;
+              font-family: 'Century Gothic';
+              border: none;
+              border-radius: 10px;
+
+           }
+       #btn1{
+
+             width:75px; 
+             height:35px; 
+             margin:20px;
+             font-family: 'Century Gothic';
+             border: none;
+            border-radius: 25px;
+
+
+		        }
+        #con{
+          margin-top: 175px;
+        }
+
+
+    </style>
+  </head>
+  <body id="con" class="bg-dark">
+   <h1 class="text-info" id="tit">GENERAL KNOWLEDGE QUIZ</h1>
+   <p class="text-light" id="que" style="text-align: center;">Que: 5] Who wrote the book "The Wealth of Nations"?</p>
+   <div class="text-light" id="ans">
+    	<button class="text-light btn btn-outline-secondary" onclick="oc1()" id="ops1" style="margin:30px; width:200px; height:75px; border: none border-radius: 10px; font-family: 'Century Gothic';">A. David Ricardo</button>
+   	<button class="text-light btn btn-outline-secondary" onclick="oc2()" id="ops2" style="margin:30px; width:200px; height:75px; border: none border-radius: 10px; font-family: 'Century Gothic';">B. Karl Marx</button><br>
+    <button class="text-light btn btn-outline-secondary" onclick="oc3()" id="ops3" style="margin:30px; width:200px; height:75px; border: none border-radius: 10px; font-family: 'Century Gothic';">C. Adam Smith</button>
+   	<button class="text-light btn btn-outline-secondary" onclick="oc4()" id="ops4" style="margin:30px; width:200px; height:75px; border: none border-radius: 10px; font-family: 'Century Gothic';">D. John Locke</button><br>
+   	<a href="cssquiz3.html"><button class="text-light btn-info" id="btn1">Back</button></a>
+   	<a href="cssquiz5.html"><button class="text-light btn-info" id="btn1">Next</button></a>
+   </div>
+    <script>  
+          const btn1 = document.getElementById('ops1');
+
+          btn1.addEventListener('click', function oc1(){
+            btn1.style.backgroundColor = 'red';
+            btn3.style.backgroundColor = 'green';
+            btn1.style.color = 'white';
+          });
+
+          const btn2 = document.getElementById('ops2');
+
+          btn2.addEventListener('click', function oc2(){
+            btn2.style.backgroundColor = 'red';
+            btn3.style.backgroundColor = 'green';
+            btn2.style.color = 'white';
+          });
+
+          const btn3 = document.getElementById('ops3');
+
+          btn3.addEventListener('click', function oc3(){
+            btn3.style.backgroundColor = 'green';
+            btn3.style.color = 'white';
+          });
+
+          const btn4 = document.getElementById('ops4');
+
+          btn4.addEventListener('click', function oc4(){
+            btn4.style.backgroundColor = 'red';
+            btn3.style.backgroundColor = 'green';
+            btn4.style.color = 'white';
+          });
+
+
+   </script>   
+  </body>
+</html>
